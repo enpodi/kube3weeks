@@ -41,7 +41,7 @@ then
 	sudo systemctl stop containerd
 	# cleanup old files from previous attempt if existing
 	[ -d bin ] && rm -rf bin
-	wget https://github.com/containerd/containerd/releases/download/v1.6.15/containerd-1.6.15-linux-${PLATFORM}.tar.gz 
+	wget https://github.com/containerd/containerd/releases/download/v1.7.1/containerd-1.7.1-linux-${PLATFORM}.tar.gz 
 	tar xvf containerd-1.6.15-linux-${PLATFORM}.tar.gz
 	sudo mv bin/* /usr/bin/
 	# Configure containerd
